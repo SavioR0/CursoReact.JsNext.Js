@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu html</title>
+
+    <style> 
+        h1{
+            background-color: red; /** Todas as tags h1 ficam com o backgroun vermelho **/
+        }
+
+        p{
+            background: blue;
+        }
+
+        #cabecalho-dois{ /** Forma de referenciar um id**/
+            background-color: blueviolet;
+        }
+
+        .fundo-laranja{
+            background-color: orange ; /**por causa da especificidade a cor laranja  não é aplicada id>class**/
+        }
+    </style> <!-- A tag style é utilizado por css--> 
+</head>
+<body>
+    <h1 id = "cabecalho-um">Cabeçalho 1</h1><!-- Tag responsavel por fazer titulos com id único cabeçalho-->
+    <h1 id = "cabecalho-dois" class = "fundo-laranja"> Cabeçalho 2</h1> <!--Id é um identificador unico, as classes podem ser utilizados por vários elementos-->
+    <p>--Parágrafo-- <b> Negrito</b> <!-- Tag negrito--></p> 
+</body>
+</html>
