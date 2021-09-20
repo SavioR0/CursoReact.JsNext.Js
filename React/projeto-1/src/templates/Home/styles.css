@@ -1,0 +1,30 @@
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: #eee;
+  padding: 30px
+}
+
+
+
+/* grid que segura todos os post (não está dentro do map) */
+.posts{
+  display: grid; /* cria uma grid */
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Coloca o que foi definido para todos os elementos, No minimo 280px senão 1fr */
+  gap: 30px;
+}
+
+.button-container{
+  min-height: 60px;
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.search-container{
+  margin-bottom: 20px
+}
+.search-container h1{
+  margin-bottom: 30px
+}
